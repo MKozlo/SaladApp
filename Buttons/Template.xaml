@@ -1,0 +1,115 @@
+﻿<Page
+    x:Class="SaladApp.Template"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:SaladApp"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    xmlns:controls="using:Microsoft.Toolkit.Uwp.UI.Controls"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="10*" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+            <Grid Grid.Row="0" Background="Honeydew">
+            
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="Auto" />
+            </Grid.ColumnDefinitions>
+
+            <StackPanel Grid.Column="0" Orientation="Horizontal" >
+
+                <Button Background="Honeydew" Click="Salad_Click" >
+                    <Image Source="https://cdn.pixabay.com/photo/2014/12/21/23/29/salad-575436_960_720.png" Height="Auto" Width="Auto" />
+                </Button>
+            </StackPanel>
+
+            <StackPanel Grid.Column="1" Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center" >
+                <TextBlock Text="Salad Symphony" FontFamily="Garamond" FontWeight="Bold" FontSize="22" HorizontalAlignment="Center" />
+            </StackPanel>
+
+            <StackPanel Grid.Column="2" Orientation="Horizontal" HorizontalAlignment="Right" VerticalAlignment="Center" >
+                <Button Background="Honeydew" Click="User_Click" >
+                    <Image Source="https://cdn.pixabay.com/photo/2016/08/31/11/54/icon-1633249_1280.png" Height="Auto" Width="Auto" Margin="5" />
+                </Button>
+            </StackPanel>
+
+        </Grid>
+
+        <Grid Grid.Row="1" Background="LightYellow" >
+            
+        </Grid>
+
+        <Grid Grid.Row="2" >
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition />
+                <ColumnDefinition />
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition />
+                <ColumnDefinition />
+            </Grid.ColumnDefinitions>
+
+            <Button HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Background="#819486" Click="Create_Click" >
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*" />
+                        <RowDefinition Height="Auto" />
+                    </Grid.RowDefinitions>
+
+                    <Image Grid.Row="0" Source="https://cdn.pixabay.com/photo/2021/07/25/08/07/add-6491203_640.png" Opacity="0.7" Margin="0 0 0 0" />
+                    <TextBlock Grid.Row="1" Text="Create" />
+                </Grid>
+            </Button>
+
+            <Button Grid.Column="1" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Background="#819486" Click="Menu_Click" >
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*" />
+                        <RowDefinition Height="Auto" />
+                    </Grid.RowDefinitions>
+
+                    <Image Grid.Row="0" Source="https://cdn.pixabay.com/photo/2016/10/05/21/05/fork-1717638_640.png" />
+                    <TextBlock Grid.Row="1" Text="Menu" />
+                </Grid>
+            </Button>
+
+            <Button Grid.Column="2" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Background="#819486" Click="Cart_Click" >
+                <Grid>
+                    <Image Grid.Row="0" Source="https://cdn.pixabay.com/photo/2012/04/16/11/34/shopping-35594_1280.png" />
+                </Grid>
+            </Button>
+
+            <Button Grid.Column="3" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Background="#819486" Click="FindUs_Click" >
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*" />
+                        <RowDefinition Height="Auto" />
+                    </Grid.RowDefinitions>
+
+                    <Image Grid.Row="0" Source="https://cdn.pixabay.com/photo/2021/10/11/00/59/search-6699087_640.png" />
+                    <TextBlock Grid.Row="1" Text="Find us" />
+                </Grid>
+            </Button>
+
+            <Button Grid.Column="4" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Background="#819486" Click="SocialMedia_Click" >
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*" />
+                        <RowDefinition Height="Auto" />
+                    </Grid.RowDefinitions>
+
+                    <Image Grid.Row="0" Source="https://cdn.pixabay.com/photo/2016/11/30/17/10/web-1873373_640.png" Opacity="0.8" />
+                    <TextBlock Grid.Row="1" Text="Social Media"/>
+                </Grid>
+            </Button>
+        </Grid>
+    </Grid>
+</Page>
