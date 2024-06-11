@@ -32,7 +32,7 @@ namespace SaladApp
             }
             return Command;
         }
-
+        // test
         public void Disconnect()
         {
             Connection.Close();
